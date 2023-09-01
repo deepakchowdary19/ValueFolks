@@ -4,12 +4,15 @@ import Displaylogo from '../Images/Displaylogo.jpg'
 import GoogleIcon from '../Images/GoogleIcon.png'
 import Button from '@mui/material/Button';
 import JourneyFields from './JourneyFields';
-import mentor from '../Images/mentor.png'
+import Content from './Content';
+import achivements from '../Images/achivements.jpg'
+import CardsData from './CardsData';
+import Bottom from '../Components/Bottom';
 
 
 export default function Display() {
     const videocall = require('../Images/Videocall.png')
-    const Web  = require('../Images/web.png')
+    const Web = require('../Images/web.png')
     const mentor = require('../Images/mentor.png')
     const post = require('../Images/post.png')
     const collaborate = require('../Images/collaborate.png')
@@ -41,7 +44,7 @@ export default function Display() {
                 </div>
             </div>
             <div className='Works'>
-            <div className='WorksContainer'>
+                <div className='WorksContainer'>
                     <p style={{ color: '#121212', fontWeight: '600', fontSize: '28px', textAlign: 'center' }}> Your Journey, Amplified</p>
                     <span style={{ color: '#121212', fontWeight: '600', fontSize: '20px', paddingTop: "0px" }}>Same process but tailored to you.You wont be swarmed with proposals,only relevant quality leads</span>
                     <div className='JourneyFields'>
@@ -51,8 +54,44 @@ export default function Display() {
                         <JourneyFields image={support} title='support' content='Connect with top-tier mentors who are committed to your growth and success' />
                     </div>
                 </div>
-
             </div>
+
+            <div className='Contentcss'>
+                <Content flex_direction="row" />
+            </div>
+            <div className='Contentcss1'>
+                <Content flex_direction="row-reverse" />
+            </div>
+            <div className='about'>
+                <p style={{ color: '#FFFFFF', fontWeight: '600', fontSize: '28px', textAlign: 'left' }}> Your Journey, Amplified</p>
+                <img src={achivements} alt='achivements' className='achivements' />
+            </div>
+
+            <div className='Cardsdatacss'>
+                <p style={{ color: '#121212', fontWeight: '600', fontSize: '28px', textAlign: 'center' }}> Your Journey, Amplified</p>
+                <div className='boxesdata'>
+                    <CardsData />
+                    <CardsData />
+                    <CardsData />
+                </div>
+                <p style={{ color: '#121212', fontWeight: '600', fontSize: '18px', textAlign: 'center' }}> Love Your Experience</p>
+            </div>
+            <div className='ContainerBotom'>
+                <div className='Content'>
+                <img src={Displaylogo} alt='logo' className='Displaylogo1' />
+                    <div className='Title'>
+                        <p style={{ color: '#121212', fontWeight: '600', fontSize: '28px', width: '100%', textAlign: 'center' }}> Connecting Ambition with Experience Find Your Mentor </p>
+                        <span style={{ color: '#121212', fontWeight: '600', fontSize: '20px', width: '100%', textAlign: 'center', paddingTop: "0px" }}>Your journey to Excellence starts with handpicked mentors</span>
+                        <Button variant="contained" size='large' style={{ width: '25%', height: '22%', marginTop: '10%',alignSelf:'center' }}>Get Started</Button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div>
+                <Bottom/>
+            </div>
+
+
         </div>
     )
 }

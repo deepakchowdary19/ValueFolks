@@ -70,6 +70,41 @@
   .WorksContainer{   
     padding: 5px;      
     height: 507px;
+   
+ }
+ .Contentcss{
+  background-color: #fafafb;
+  height: 34%;
+ }
+ .Contenntcss1{
+    background-color: #ffffff;
+ }
+ .about{
+    background-color: #0000FF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+ }
+ .achivements{
+    width: 20%;
+    height: 20%;
+ }
+ .Cardsdatacss{
+    display: flex;   
+    flex-direction: column;
     
-
-  }
+ }
+ .boxesdata{
+    display: grid;
+   grid-template-columns:repeat(3,1fr);
+   grid-column-gap: 100px; 
+    margin-left: 5%;
+ }
+ .ContainerBotom{
+    background-color: #fafafb;
+ }
+ .Displaylogo1{
+    width: 30%;
+    height: 30%;
+    margin-right: 5%;
+ }
