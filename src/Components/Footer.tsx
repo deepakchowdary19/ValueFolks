@@ -38,7 +38,7 @@ import iconImage from "../Images/iconImage.png";
           <MDBRow className='mt-3'>
             <MDBCol md="3" lg="4" xl="3" className='mx-auto mb-4'>
             <h6 className='fw-bold' style={{ marginRight: '2px', fontFamily: 'monospace', fontWeight: 700, letterSpacing: '.3rem', color: '#121212', textDecoration: 'none' }}>
-        <div className="d-none d-md-flex ml-3"> {/* Display conditionally using Bootstrap classes */}
+        <div className="d-none d-md-flex ml-3">
           <img src={iconImage} alt="Icon" className="img-fluid me-4" style={{ width: '50px', height: '50px' }} />
           <a className='text-reset fw-bold' href='/'>ValueFolks</a>
         </div>
