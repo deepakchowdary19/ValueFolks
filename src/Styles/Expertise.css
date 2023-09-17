@@ -1,0 +1,17 @@
+.skillfields{
+    display: flex;
+    flex-direction: column;
+    margin-right: 45%;
+    margin-top: 3%;
+}
+.skillsbutton {
+    display: flex;
+   width: fit-content;
+   margin-right: 5%;
+  }
+  
+  .bottomskillbutton {
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 20px;
+  }
