@@ -14,7 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import iconImage from '../Images/iconImage.png'
 
-const pages = ['home', 'find', 'specialists', 'about us', 'contact'];
+const pages = ['home', 'find specialists',  'about us', 'contact'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar() {

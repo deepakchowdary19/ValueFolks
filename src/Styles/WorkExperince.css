@@ -1,0 +1,24 @@
+.workfields{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20%;
+    margin-top: 3%;
+}
+.workbutton {
+    display: flex;
+   width: fit-content;
+   margin-right: 5%;
+  }
+  
+  .bottomworkbutton {
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 20px;
+  }
+  .worktimefields{
+    
+        display: flex;
+        flex-direction: row;
+        padding-left: 11%;
+        margin-top: 3%;
+      }
