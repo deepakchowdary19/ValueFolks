@@ -1,0 +1,8 @@
+.Container{
+    background-color: blue;
+}
+
+.Content {
+    display: flex;
+    flex-direction: row;
+}
