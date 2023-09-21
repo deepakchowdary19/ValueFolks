@@ -8,6 +8,7 @@ import Stack from '@mui/material/Stack';
 import '../Styles/FindSpecialist.css'
 import { Button, Card , CardContent, Typography } from '@mui/material';
 import { FaSearch } from 'react-icons/fa';
+import Header from './Header'
 
 interface Profile {
   id: number;
@@ -66,8 +67,8 @@ const FindSpecialist = () => {
   };
 
   return (
-    <div className='Container'>
-      <div className='container'>{showProfileCards? (
+      <div className='Container'>
+        {showProfileCards? (
               <div className='Content'>
                  <Stack spacing={3} sx={{ width: 600 }}>
                    <Autocomplete
@@ -104,7 +105,6 @@ const FindSpecialist = () => {
           </div>
         )}
       </div>
-    </div>
   )
 }
 

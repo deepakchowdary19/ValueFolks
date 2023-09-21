@@ -1,10 +1,10 @@
-.container {
+.Container {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     background: url('../Images/findspecialistbackground.jpg');
     background-repeat: no-repeat;
     background-size: cover; /* or 'contain' depending on your preference */
@@ -12,6 +12,10 @@
     position: fixed;
     overflow-y: scroll;
   }
+
+.Heading{
+  margin-top: 20px;
+}
 
 
 .Content {

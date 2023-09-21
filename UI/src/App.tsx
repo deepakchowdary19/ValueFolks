@@ -2,7 +2,8 @@ import React,{useState} from 'react';
 import './App.css';
 import Mainscreen from './Screens/Mainscreen';
 import PersonalInfoUpload from './Screens/PersonalInfoUpload';
-import FindSpecialist from './Screens/FindSpecialist';
+import FindSpecialist from './Components/FindSpecialist';
+import FindSpecialistScreen from './Screens/FindSpecialistScreen';
 
 
 type PersonalinfoProps = {
@@ -13,7 +14,7 @@ type PersonalinfoProps = {
 function App() {
   return (
     <div className="App">
-     <FindSpecialist/>
+     <FindSpecialistScreen/>
     </div>
   );
 }
