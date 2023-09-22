@@ -2,15 +2,12 @@ import React,{useState} from 'react';
 import './App.css';
 import Mainscreen from './Screens/Mainscreen';
 import PersonalInfoUpload from './Screens/PersonalInfoUpload';
-type PersonalinfoProps = {
-  setComponentName: (name: string) => void;
-  componentname: string;
-}
+import ProfileCard from './Components/ProfileCard';
 
 function App() {
   return (
     <div className="App">
-     <PersonalInfoUpload/>
+     <ProfileCard/>
     </div>
   );
 }
