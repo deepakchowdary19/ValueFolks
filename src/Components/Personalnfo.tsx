@@ -45,6 +45,14 @@ const InsetDividers: React.FC<InsetDividersProps> = ({ setComponentName }) => {
         </ListItemAvatar>
         <ListItemText primary="Work Experience" style={{cursor:"pointer"}} onClick={() => { setComponentName("Work Experience") }} />
       </ListItem>
+      <ListItem>
+        <ListItemAvatar>
+          <Avatar>
+            <AccessTimeIcon />
+          </Avatar>
+        </ListItemAvatar>
+        <ListItemText primary="Projects" style={{cursor:"pointer"}} onClick={() => { setComponentName("Work Experience") }} />
+      </ListItem>
     </List>
   );
 }

@@ -12,9 +12,9 @@ type JourneyFieldsProps ={
 export default function JourneyFields(props : JourneyFieldsProps) {
   return (
     <div>
-        <img src={props.image} alt='mentor' className='image'/>
+        <img src={props.image} alt='mentor' className='image' style={{paddingLeft:'50px'}}/>
         <div className='content'>
-            <p style={{fontSize:'18px',fontWeight:'400'}}>{props.title}</p>
+            <p style={{fontSize:'18px',fontWeight:'400',textAlign:'center',}}>{props.title}</p>
             <p style={{fontSize:'12px',fontWeight:'400',width:'209px',textAlign:'center'}}>{props.content}</p>
 
         </div>

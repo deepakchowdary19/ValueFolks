@@ -1,18 +1,23 @@
-import React,{useState} from 'react';
-import './App.css';
-import Mainscreen from './Screens/Mainscreen';
+import React from 'react'
+import AboutPage from './Components/Aboutus'
+import Mainscreen from './Screens/Mainscreen'
+import { BrowserRouter as Router, Route,Routes  } from 'react-router-dom';
 import PersonalInfoUpload from './Screens/PersonalInfoUpload';
-type PersonalinfoProps = {
-  setComponentName: (name: string) => void;
-  componentname: string;
-}
+import ProfileCard from './Components/ProfileCard';
+import FindSpecialistScreen from './Screens/FindSpecialistScreen';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-     <PersonalInfoUpload/>
-    </div>
-  );
-}
+    <Router>
+      <Routes>
+      <Route  path="/" Component={FindSpecialistScreen}/>
+        <Route  path="/Mainscreen" Component={Mainscreen}/>
+        <Route path="/ProfileCard" Component={ProfileCard}/>
+        <Route  path="/about" Component={AboutPage}/>
+        <Route  path="/PersonalInfoUpload"  Component={PersonalInfoUpload}/>
+      </Routes>
+    </Router>
 
-export default App;
+   
+  )
+}

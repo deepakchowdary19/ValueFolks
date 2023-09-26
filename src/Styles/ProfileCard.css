@@ -1,0 +1,27 @@
+.dp{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    border: 1px solid white;
+    border-right-color: #C3AFAF;
+    padding: 25px;
+}
+.det{
+   width: 100%;
+}
+.line{
+  
+    width: 0.1pt;
+    height: 900px;
+    margin-left: 20px;
+}
+.profilecard{
+    display: flex;
+    
+}
+.detapro{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
