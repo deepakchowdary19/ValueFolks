@@ -13,11 +13,14 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import iconImage from '../Images/iconImage.png'
+import { useNavigate } from 'react-router-dom'
 
-const pages = ['home', 'find specialists',  'about us', 'contact'];
+const pages = ['home', 'find specialists', 'about us', 'contact'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar() {
+
+
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
   const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
 
@@ -35,6 +38,7 @@ function ResponsiveAppBar() {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
+  const navigation = useNavigate();
 
   return (
     <AppBar position="static" sx={{ backgroundColor: '#ffffff' }}>
@@ -101,8 +105,14 @@ function ResponsiveAppBar() {
                 }}
               >
                 {pages.map((page) => (
-                  <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">{page}</Typography>
+                  <MenuItem key={page} onClick={() => handleMenuItemClick(page)}>
+                    <Typography
+                      textAlign="center"
+
+                    >
+                      {page}
+                    </Typography>
+
                   </MenuItem>
                 ))}
               </Menu>
@@ -130,7 +140,7 @@ function ResponsiveAppBar() {
               {pages.map((page) => (
                 <Button
                   key={page}
-                  onClick={handleCloseNavMenu}
+                  onClick={() => handleMenuItemClick(page)}
                   sx={{ my: 2, color: '#121212', display: 'block' }}
                 >
                   {page}
@@ -138,7 +148,7 @@ function ResponsiveAppBar() {
               ))}
             </Box>
           </div>
-          <div style={{position:"absolute",right:"0px"}}>
+          <div style={{ position: "absolute", right: "0px" }}>
             <Box sx={{ flexGrow: 0 }}>
               <Tooltip title="Open settings">
                 <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
@@ -173,5 +183,11 @@ function ResponsiveAppBar() {
       </Container>
     </AppBar>
   );
+  function handleMenuItemClick(page: string) {
+    handleCloseNavMenu();
+    if (page === 'about us') {
+      navigation('/about');
+    }
+  }
 }
 export default ResponsiveAppBar;

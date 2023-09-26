@@ -1,6 +1,7 @@
 .image{
     width: 112px;
     height: 111px;
+    border-radius: 100px;
 }
 .content{
     display: flex;

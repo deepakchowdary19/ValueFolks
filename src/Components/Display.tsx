@@ -35,7 +35,7 @@ export default function Display() {
             <div className='subcontainer'>
                 <div className='card'>
                     <p style={{ color: '#121212', fontWeight: '600', fontSize: '28px', textAlign: 'center' }}> Your Journey, Amplified </p>
-                    <span style={{ color: '#121212', fontWeight: '600', fontSize: '20px', textAlign: 'center', paddingTop: "0px" }}>Transform your career with our expert mentorship services.</span>
+                    <p style={{ color: '#121212', fontWeight: '600', fontSize: '20px', textAlign: 'center', paddingTop: "0px" }}>Transform your career with our expert mentorship services.</p>
                     <div className='JourneyFields'>
                         <JourneyFields image={videocall} title='1:1 Video Call Sessions' content='Personalized virtual meetings connecting you with experienced mentors for focused guidance' />
                         <JourneyFields image={Web} title='Expert Help in Various Fields' content='Access specialized assistance from industry experts across diverse domains' />
@@ -45,7 +45,7 @@ export default function Display() {
             </div>
             <div className='Works'>
                 <div className='WorksContainer'>
-                    <p style={{ color: '#121212', fontWeight: '600', fontSize: '28px', textAlign: 'center' }}> Your Journey, Amplified</p>
+                    <p style={{ color: '#121212', fontWeight: '600', fontSize: '28px', textAlign: 'center' }}> Targeted Progress and Guidance</p>
                     <span style={{ color: '#121212', fontWeight: '600', fontSize: '20px', paddingTop: "0px" }}>Same process but tailored to you.You wont be swarmed with proposals,only relevant quality leads</span>
                     <div className='JourneyFields'>
                         <JourneyFields image={post} title='Post' content='We hand pick our Professinals so that you are only ever trapping into Australias best' />
@@ -57,13 +57,17 @@ export default function Display() {
             </div>
 
             <div className='Contentcss'>
-                <Content flex_direction="row" />
+                <Content flex_direction="row" matterPText='Connecting Ambition with Experience: Find Your Mentor' matterSpanText='Discover the power of mentorship and propel your ambition towards success. At Value Folks, we believe in connecting aspiring individuals with experienced mentors who can guide them on their journey'/>
             </div>
             <div className='Contentcss1'>
-                <Content flex_direction="row-reverse" />
+                <Content flex_direction="row-reverse"  matterPText='Building Confidence and Resilience' matterSpanText='Guidance and support from a mentor can significantly boost your confidence and resilience. They share their experiences of overcoming obstacles, instilling in you the determination to face challenges head-on. This empowerment is fundamental in fortifying your journey.'/>
             </div>
             <div className='about'>
-                <p style={{ color: '#FFFFFF', fontWeight: '600', fontSize: '28px', textAlign: 'left' }}> Your Journey, Amplified</p>
+                <div style={{display:'flex',flexDirection:'column'}}>
+                <p style={{ color: '#FFFFFF', fontWeight: '600', fontSize: '28px', textAlign: 'left',marginLeft:'30px' }}>Accelerating Growth and Learning</p>   
+                <p style={{ color: '#FFFFFF', fontWeight: '400', fontSize: '18px', textAlign: 'center',width:'90%' }}>Your journey is an expedition towards growth, learning, and self-improvement. Through mentorship, we facilitate an accelerated growth trajectory. Mentors, with their wealth of knowledge and experiences, act as catalysts, propelling you towards your objectives with speed and precision.</p>   
+                </div>
+
                 <img src={achivements} alt='achivements' className='achivements' />
             </div>
 
